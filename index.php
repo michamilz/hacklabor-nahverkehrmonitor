@@ -34,6 +34,8 @@ foreach ($haltestellen as $haltestelle) {
 }
 
 // Nach Datum und Uhrzeit sortieren
+$datum = [];
+$uhrzeit = [];
 foreach ($fahrten as $key => $row) {
     $datum[$key]    = $row['Datum'];
     $uhrzeit[$key] = $row['Uhrzeit'];
