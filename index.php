@@ -33,15 +33,11 @@ foreach ($haltestellen as $haltestelle) {
 	}
 }
 
-// Hole eine Liste von Spalten
+// Nach Datum und Uhrzeit sortieren
 foreach ($fahrten as $key => $row) {
     $datum[$key]    = $row['Datum'];
     $uhrzeit[$key] = $row['Uhrzeit'];
 }
-
-// Die Daten mit 'Band' absteigend, die mit 'Auflage' aufsteigend sortieren.
-// Geben Sie $data als letzten Parameter an, um nach dem gemeinsamen
-// Schlüssel zu sortieren.
 array_multisort($fahrten, SORT_ASC, $datum, SORT_ASC, $uhrzeit);
 
 header('Content-Type: application/javascript');
