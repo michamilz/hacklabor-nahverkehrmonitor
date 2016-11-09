@@ -40,7 +40,7 @@ foreach ($fahrten as $key => $row) {
     $datum[$key]    = $row['Datum'];
     $uhrzeit[$key] = $row['Uhrzeit'];
 }
-array_multisort($fahrten, SORT_ASC, $datum, SORT_ASC, $uhrzeit);
+array_multisort($datum, SORT_NUMERIC, SORT_ASC, $uhrzeit, SORT_NUMERIC, SORT_ASC, $fahrten);
 
 header('Content-Type: application/javascript');
 echo json_encode($fahrten);
