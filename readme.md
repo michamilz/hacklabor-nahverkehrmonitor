@@ -39,7 +39,7 @@ Die dichtesten Haltestellen für Bus und Straßenbahn sind folgende:
 
 Die Gartenstadt taucht in der Liste nicht mit auf. Da dort aber Straßenbahnen verkehren, die nicht im/am Blumenbrink halten, wird sie ebenfalls abgefragt.
 
-Diese IDs sind der Parameter für den Wert name_dm in der nächsten Abfrage.
+Diese IDs sind die Werte für den Parameter name_dm in der nächsten Abfrage.
 
 ### Abfahrten an Haltestellen
 
@@ -55,8 +55,5 @@ Der Wert für den Knoten tk in der Antwort scheint eine Art ID für die Fahrt zu
 
 ## Funktionsweise des Skriptes
 
-Dieses Skript dient als Proxy um CORS Probleme zu vermeiden. Die gewonnenen Daten werden zusammengefasst und nach Zeiten sortiert als JSON ausgegeben.
-
-## ToDo
-
-* Caching der Ergebnisse
+Für die oben genannten Haltestellen werden die Daten abgefragt. Die Antworten werden bis zu 6 Minuten gecached um nicht unnötig oft auf das API zuzugreifen. 
+Die Abfahrten werden zusammengefasst und nach Zeit sortiert. Das Ergebnis wird als JSON ausgegeben.
