@@ -1,6 +1,8 @@
 # Abfahrtsmonitor für das Hacklabor
 
-Das [Hacklabor](https://hacklabor.de) ist ein Hackspace im [Schweriner Technologiezentrum](http://tgz-mv.de). Dieses Skript soll die nächsten Abfahrten des [ÖPNV](http://nahverkehr-schwerin.de) an den nächstgelegenen Haltestellen liefern.
+Das [Hacklabor](https://hacklabor.de) ist ein Hackspace im [Schweriner Technologiezentrum](http://tgz-mv.de). 
+Dieses Skript soll die nächsten Abfahrten des [ÖPNV](http://nahverkehr-schwerin.de) an den nächstgelegenen Haltestellen liefern.
+Unter [https://hacklabor.de/standort/](https://hacklabor.de/standort/) ist es im Einsatz zu sehen.
 
 ## Datenbasis
 
