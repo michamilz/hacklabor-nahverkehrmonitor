@@ -2,12 +2,33 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
+use GuzzleHttp\Client;
+use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Exception\ClientException;
+use League\Flysystem\Adapter\Local;
+use Kevinrob\GuzzleCache\CacheMiddleware;
+use Kevinrob\GuzzleCache\Strategy\GreedyCacheStrategy;
+use Kevinrob\GuzzleCache\Storage\FlysystemStorage;
 
 $haltestellen = [44402071, 44402070, 44402209, 44402035];
 $fahrten = [];
 
-$client = new GuzzleHttp\Client();
+$stack = HandlerStack::create();
+$stack->push(
+  	new CacheMiddleware(
+    	new GreedyCacheStrategy(
+      		new FlysystemStorage(
+        		new Local("cache")
+      		),
+      		360
+    	)
+  	), 
+  	"cache"
+);
+
+$client = new Client([
+    "handler"  => $stack,
+]);
 
 foreach ($haltestellen as $haltestelle) {
 	try {
