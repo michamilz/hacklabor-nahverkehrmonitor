@@ -6,7 +6,11 @@ Unter [https://hacklabor.de/standort/](https://hacklabor.de/standort/) ist es im
 
 ## Datenbasis
 
-Die Daten werden von dem API der [Verkehrsgesellschaft Mecklenburg-Vorpommern mbH Schwerin](http://www.vmv-mbh.de/) angefragt. Die Funktionsweise wurde auf Basis der [iOS App](https://itunes.apple.com/de/app/mv-fahrt-gut/id1022785965) analysiert. Dort ist die gewünschte Funktion implementiert.
+Die Daten werden von dem API der [Verkehrsgesellschaft Mecklenburg-Vorpommern mbH Schwerin](http://www.vmv-mbh.de/) angefragt. 
+Die Funktionsweise wurde auf Basis der [iOS App](https://itunes.apple.com/de/app/mv-fahrt-gut/id1022785965) analysiert. 
+Dort ist die gewünschte Funktion implementiert.
+
+UPDATE: Die VMV nutzt das Elektronische Fahrplansystem ((EFA)[https://www.startpage.com/do/search?q=EFA+XML+API+&l=deutsch]). 
 
 ## Funktionsweise des API
 
