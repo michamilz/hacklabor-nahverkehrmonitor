@@ -10,7 +10,12 @@ use Kevinrob\GuzzleCache\CacheMiddleware;
 use Kevinrob\GuzzleCache\Strategy\GreedyCacheStrategy;
 use Kevinrob\GuzzleCache\Storage\FlysystemStorage;
 
-$haltestellen = [44402071, 44402070, 44402209, 44402035];
+$haltestellen = [
+    44402071, # Technologiezentrum
+    44402070, # Rosenstraße
+    #44402209, # Blumenbrink
+    44402035, # Gartenstadt
+];
 $fahrten = [];
 
 $stack = HandlerStack::create();
