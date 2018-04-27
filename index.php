@@ -14,6 +14,7 @@ $haltestellen = [
     44402071, # Technologiezentrum
     44402070, # Rosenstraße
     #44402209, # Blumenbrink
+    #44402006, # Marienplatz
     44402035, # Gartenstadt
 ];
 $fahrten = [];
